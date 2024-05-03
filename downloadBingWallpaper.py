@@ -16,7 +16,8 @@ def download_bing_images():
         os.makedirs(output_dir)
 
     for market in markets:
-        for i in range(8):  # Last 8 days
+        # Get the image data for the past 8 days, customize as needed
+        for i in range(8):  
             params = {
                 "format": "js",
                 "idx": i,
